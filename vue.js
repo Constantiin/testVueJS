@@ -28,8 +28,9 @@ let vue = new Vue ({
     
     methods: {
         selectCar (index) {
-            this.activeCar = this.cars[index]
+            this.activeCar = this.filteredCars[index]
             this.selectedCarIndex = index
+            this.visibilityPhone = false
         },
         newOrder () {
             this.visibilityModal = false
